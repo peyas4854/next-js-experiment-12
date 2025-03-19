@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Project
+
+Welcome to the Next.js project! This project serves as a web application built with Next.js.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Image Attachment](#image-attachment)
+- [License](#license)
 
 ## Getting Started
 
-First, run the development server:
+To get started with the project, follow the steps below:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [x] Server-side rendering (SSR)
+- [x] Dynamic routing
+- [x] Middleware integration for CSRF token management
+- [x] Set CSRF token in cookies
+- [x] Get CSRF token from cookies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Setup
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/peyas4854/next-js-experiment-12.git
+2. Change into the project directory:
+   ```bash
+   cd next-js-experiment-12
+3. Install the dependencies:
+   ```bash
+    npm install
+4. Start the development server:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    ```bash
+    npm run dev
+    ```
+5. Open the browser and navigate to `http://localhost:3000`.
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+Once the server is running, open your browser and visit http://localhost:3000 to see the application in action. You can
+explore the pages and see SSR behavior, including how CSRF tokens are handled.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Image Attachment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ![Home Page](./public/images/home.png)
 
-## Deploy on Vercel
+- ![About Page ](./public/images/about.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
