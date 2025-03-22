@@ -6,8 +6,12 @@ export async function getServerSideProps({req}) {
     const csrfToken = cookies['csrf-token'];
     console.log('CSRF Token home page :', csrfToken);
     if (!csrfToken) {
+        // reload page
         return {
-            notFound: true, // or handle the case where CSRF token is missing
+            redirect: {
+                destination: '/',
+                permanent: false,
+            },
         };
     }
     // You can now use the CSRF token for your SSR logic or pass it to the page props
